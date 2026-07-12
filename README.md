@@ -1,2 +1,2 @@
 # TransitOps-ODOO-HACKATHON
-Smart Transport Operations Platform
+ TransitOps Smart Transport Operations Platform
