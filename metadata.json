@@ -1,0 +1,6 @@
+{
+  "name": "CarryOn",
+  "description": "A modern transport operations platform for logistics companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
