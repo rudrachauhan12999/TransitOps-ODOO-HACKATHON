@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&family=Outfit:wght@400;600;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #f6f5f0;
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbars to match the Elegant Light Cream theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom glow borders and glassmorphism elements */
+.elegant-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.02);
+}
+
+.elegant-card-glow {
+  background: #ffffff;
+  border: 1px solid rgba(239, 35, 60, 0.25);
+  box-shadow: 0 0 25px rgba(239, 35, 60, 0.06);
+}
+
+.elegant-input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  color: #0f172a;
+  transition: all 0.2s ease;
+}
+
+.elegant-input:focus {
+  border-color: rgba(239, 35, 60, 0.6);
+  box-shadow: 0 0 12px rgba(239, 35, 60, 0.15);
+  outline: none;
+}
+
+/* Custom fade-in for smooth dashboard entries */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
